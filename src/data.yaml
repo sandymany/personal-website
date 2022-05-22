@@ -1,0 +1,72 @@
+content:
+  title : "Osobna stranica"
+  ime : "Leticija Crnković"
+  aboutMeText : |
+    Rođena sam 6. studenog 2001. godine u Varaždinu. 
+    Djetinjstvo sam provela dijelom u svom rodnom gradu, 
+    a dijelom u Koprivnici, gdje sam pohađala osnovnu i srednju školu. 
+    Za vrijeme osnove škole sav moj fokus bio je na glazbi te sam 
+    ulagala mnogo slobodnog vremena u vježbanje violine (i klavira). Budući da sam
+    ulagala dosta truda u to, sudjelovala sam na mnogim gudačkim natjecanjima. 
+    Međutim, glazbu nikada nisam smatrala konačnom karijerom, 
+    primarno zbog svoje introvertne naravi. 
+    Nakon upisa prirodoslovno-matematičke gimnazije, 
+    prebacila sam se u svijet matematike
+    i informatike, što je zahtijevalo skroz novi način razmišljanja.
+    Bilo je izazovno, ali svakako zabavno.
+    Kroz srednju školu samostalno sam učila programske jezike: 
+    Python, C++, Java. Kroz to razdoblje bila sam na natjecanjima iz algoritama i razvoja softvera. 
+    U učenju mi je uvelike pomogao i stariji brat koji
+    mi je bio i mentor na natjecanju iz informatike 2020. kada sam se plasirala na državno natjecanje.
+
+  aboutMeSubtitle : "O meni"
+  educationSubtitle: "Školovanje"
+  educationContent1: "Osnovnu obaveznu i osnovnu glazbenu školu završila sam paralelno 
+  te sam nakon toga upisala prirodoslovno-matematičku gimnaziju u Koprivnici.
+  Nakon mnogo usvojenog znanja kroz srednju školu upisala sam FER u Zagrebu. 
+  Kontinuiranim studijem sada sam na drugoj godini, smjer 'Računarstvo'."
+  educationContent2: "Nakon preddiplomskog studija planiram dalje upisati diplomski
+  studij smjera 'Programsko inženjerstvo'."
+
+  skillsSubtitle: "Vještine"
+  skillsSubtitle1: "Tehničke vještine"
+  skillsContent1:
+    - Java: (dobro poznavanje principa objektno-orjentiranog programiranja)
+    - Python: Python (osnove Flaska, webScraping)
+    - C/C++: višedretveni rad, sinkronizacija
+    - SQL: SQL (poznavanje i korištenje baza podataka za složene upite)
+    - HTML i CSS: izrada jednostavnih web stranica
+    - JavaScript: JavaScript/TypeScript (osnovno znanje Expressa i Angulara)
+    - Mobile development: Android SDK (osnovno znanje)
+
+  skillsSubtitle2: "Ostale vještine"
+  skillsContent2:
+    - JSON, yaml, XML: rad s parsiranjem podataka
+    - Strani jezici: engleski, osnove njemačkog
+    - Vozačka dozvola: B kategorija
+    - Sviranje: violina, klavir
+    - Crtanje: anime
+  
+  projectsSubtitle: Projekti
+  Bugy: "Android aplikacija (client-server uz SQL bazu) 
+            koja pomaže entomolozima (znanstvenicima koji proučavaju kukce) 
+            i ostalim ljubiteljima kukaca. Korisnicima je omogućeno pretraživanje 
+            postojeće ogromne (11230 jedinki) baze, stvaranje vlastite kolekcije, 
+            dodavanje individualiziranog opisa svakom kukcu i mijenjanje postojećih 
+            informacija u bazi. Dodane su opcije poput slanja email obavijesti, promjena 
+            jezika (hrv, eng, njem, jap) i odjava sa prijavljenih uređaja.
+            Ostale pojedinosti možete pročitati na sljedećim linkovima:"
+
+  GeografijApp: "Ovo je vrlo jednostavna aplikacija koju sam napravila
+  u sklopu srednje škole. Služila je pri akciji sadnje drveća na prostoru
+  škole te su bile implementirane funkcionalnosti za dodavanje novog stabla
+  u bazu, postavljanje njegove lokacije uz pomoć karte te pregled već
+  posađenih stabala. Ova aplikacija bila je prva koju sam radila u timu
+  s kolegom. U svojoj aplikaciji koristila sam API koji je on postavio na backendu."
+
+  hobbiesSubtitle: Hobiji
+  contactSubtitle: Kontaktiraj me!
+
+  links :
+    robotics: "https://gimnazija-fgalovic.hr/2019/05/06/kroatische-clil-robotik-meisterschaft-robotika-na-njemackom-jeziku/"
+    violina: "https://www.bistricki-zvukolik.com.hr/2014/natjecatelji/pregled/leticija-crnkovic"

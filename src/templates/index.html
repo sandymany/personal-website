@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond">
+<style>
+
+</style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{{ data['title']}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" lang="en" content="open source html and css template">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="slidy.css">
+</head>
+<body>
+<div id="menu">
+<nav>
+<input type="checkbox" id="show-menu" role="button">
+<label for="show-menu" class="open"><span class="fa fa-bars"></span></label>
+<label for="show-menu" class="close"><span class="fa fa-times"></span></label>
+<ul id="topnav">  
+<li><a href="#aboutMe">{{data['aboutMeSubtitle']}}</a></li>
+<li><a href="#education">{{data['educationSubtitle']}}</a></li>
+<li><a href="#skills">{{data['skillsSubtitle']}}</a></li>
+<li><a href="#projects">{{data['projectsSubtitle']}}</a></li>
+<li><a href="#hobbies">{{data['hobbiesSubtitle']}}</a></li>
+<li><a href="#contact">{{data['contactSubtitle']}}</a></li>
+
+<li>
+	<ul>
+	<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	</ul>
+</li>
+</ul>
+</nav>
+</div>
+<div id="container">
+<div id="pageheader">
+<h1><i class="fa fa-user" aria-hidden="true"></i>
+	{{ data['title']}}</h1>
+<h3>{{ data['ime'] }}</h3>
+</div>
+
+<div class="section">
+<div class="pageitem">
+<div id="slider">
+<figure>
+<img id="borderimg" src="images/flower.jpg" alt>
+<img id="borderimg" src="images/forest.jpg" alt>
+<img id="borderimg" src="images/leaf.jpg" alt>
+<img id="borderimg" src="images/swamp.jpg" alt>
+
+</figure>
+</div>
+</div>
+</div>
+
+<div class="section" style="display: flex;
+flex-direction: row;
+flex-wrap: wrap;">
+		<div class = "sectionImgBox " 
+		style="display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1; align-items: center;">
+			<img src="/images/me2.jpg" id="borderimg" class="sectionImgBox" >
+		</div>
+
+		<div class="sectionTextBox " style="display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;">
+		<h2 id="aboutMe">{{ data['aboutMeSubtitle'] }}</h2>
+		<p class="contentText"> {{ data['aboutMeText']}} </p>		
+
+	</div>
+
+</div>
+
+<div class="section">
+<div class="pageitem">
+<h2 id="education"><i class="fa fa-book" aria-hidden="true"></i>
+	{{ data['educationSubtitle']}}</h2>
+<ul>
+	<li>
+		<h3><a target="_blank" href="http://www.osang-kc.hr">Osnovna škola "Antun nemčić Gostovinski"</a>, Koprivnica (2008. - 2016.)</h3>
+	</li>
+	
+		<li><h3><a target="_blank" href="	https://www.umjetnicka.net">Umjetnička škola "Fortunat Pintarić"</a>, Koprivnica (2008. - 2017.)</h3></li>
+
+	<li><h3><a target="_blank" href="http://gimnazija-fgalovic-koprivnica.skole.hr">Gimnazija "Fran Galović"</a>, Koprivnica (2016. - 2020.)</h3></li>
+	<li><h3><a target="_blank" href="https://www.fer.unizg.hr">Fakultet Elektrotehnike i Računarstva</a>, Zagreb (2020. - danas)</h3></li>
+
+
+</ul>
+<p class="contentText"> {{data['educationContent1']}} </p>
+<p class="contentText"> {{data['educationContent2']}} </p>
+</div>
+</div>
+
+<div class="section" style="display: flex;
+flex-direction: row;
+flex-wrap: wrap;">
+		<div class="sectionTextBox " style="display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;">
+
+		<h2 id="skills"><i class="fa fa-code" aria-hidden="true"></i>
+			{{ data['skillsSubtitle1'] }}</h2>
+		<ul>
+		{% for skill in data['skillsContent1']: %}
+			{% for key, value in skill.items() %}
+				<li> <h3>{{ key }} </h3></li>
+				<p class="contentText">{{ value }}</p>
+			{% endfor %}
+		{% endfor %}
+		</ul>
+	</div>
+
+		<div class="sectionTextBox " style="display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;">
+		<h2 id="skills"><i class="fa fa-star" aria-hidden="true"></i>
+			{{ data['skillsSubtitle2'] }}</h2>
+		<ul>
+			{% for skill in data['skillsContent2']: %}
+				{% for key, value in skill.items() %}
+					<li> <h3>{{ key }} </h3></li>
+					<p class="contentText">{{ value }}</p>
+				{% endfor %}
+			{% endfor %}
+			</ul>
+	</div>
+</div>
+
+
+
+<div class="section" style="display: flex;
+flex-direction: row;
+flex-wrap: wrap;">
+<div style="display: flex;
+flex-direction: row;
+flex-wrap: wrap;">
+
+		<div class="sectionTextBox" style="display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;">
+
+		<h2 id="projects"><i class="fa fa-archive" aria-hidden="true"></i>
+			{{ data['projectsSubtitle'] }}</h2>
+		<ul>
+				<li> 
+					<a target="_blank" href="https://informatika.azoo.hr/Content/upload/2020/srednje/bugy.pdf">
+						<h3 class="contentText" style="color: green;">Bugy</h3>
+					</a>
+				</li>
+				<p class="contentText">{{ data['Bugy'] }}</p>
+				<a target="_blank" href="https://informatika.azoo.hr/Content/upload/2020/srednje/bugy.pdf">
+					<p class="contentText" style="color: green;">Link do tehničke dokumentacije</p>
+				</a>
+				<a target="_blank" href="https://github.com/sandymany/bugy-server">
+					<p class="contentText" style="color: green;">Source code - server</p>
+				</a>
+		</ul>
+
+
+	</div>
+
+	<div class = "sectionImgBox " 
+	style="display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1; align-items: center;">
+		<img src="/images/bugy1.png" class="sectionImgBox" style="border-radius:10px; width: 60%" >
+	</div>
+
+	<div class = "sectionImgBox " 
+	style="display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1; align-items: center;">
+		<img src="/images/bugy.png" class="sectionImgBox" style="border-radius:10px; width: 60%" >
+	</div>
+
+</div>
+
+<div class="contentText">
+	<ul>
+		<li> 
+			<a target="_blank" href="https://github.com/sandymany/GeografijaApp">
+				<h3 class="contentText" style="color: green;">GeografijApp</h3>
+			</a>
+		</li>
+		<p class="contentText">{{ data['GeografijApp'] }}</p>
+		<a target="_blank" href="https://github.com/sandymany/GeografijaApp">
+			<p class="contentText" style="color: green;">Link do koda</p>
+		</a>
+</ul>
+
+</div>
+
+</div>
+
+<div class="section">
+	<div class="pageitem">
+
+	<h2 id="hobbies"><i class="fa fa-pagelines" aria-hidden="true"></i>
+{{ data['hobbiesSubtitle']}} </h2>
+	<ul>
+		<li><h3>Planinarenje</h3></li>
+		<p class="contentText"> Pod praznicima obavezno planinarim i preživljavam u divljini.</p>
+		<li><h3>Crtanje</h3></li>
+		<p class="contentText"> Budući da katkad volim pogledati neki dobar anime, naučila sam i crtati.</p>
+		<li><h3>Fotografiranje</h3></li>
+		<p class="contentText">Kad sam u šumi, fotografiram detalje koji mi se svide. (Slike u animaciji na vrhu stranice su moje)</p>
+		<li><h3>Sviranje</h3></li>
+		<p class="contentText">Smišljam svoje skladbe i sviram (najčešće violina).</p>
+		<li><h3>Video</h3></li>
+		<p class="contentText">Ako pod praznicima nađem vremena bavim se režiranjem, snimanjem i uređivanjem videa uz pomoć sestre</p>
+		<li><h3>Pečenje kolača</h3></li>
+		<p class="contentText">Budući da jako volim slatko, naučila sam slagati svoje omiljene kolače.</p>
+	
+	</ul>
+	
+	</div>
+</div>
+
+<div class="section">
+	<div class="pageitem">
+
+	<h2 id="contact"><i class="fa fa-envelope-o"></i>    {{ data['contactSubtitle']}}</h2>
+
+	<span class="contentText" style="margin-left:10px;">leticija.crnkovic@fer.hr</span><br/>
+	<span class="contentText" style="margin-left:10px;">crnkovic.leticija@gmail.com</span><br/>
+	
+	</div>
+</div>
+
+
+<div class="section">
+<div id="credits">
+    <div class="col"><p>by LC 2022.</p></div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
