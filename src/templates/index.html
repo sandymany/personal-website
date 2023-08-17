@@ -3,8 +3,9 @@
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/styles.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/slidy.css')}}">
 <style>
-
 </style>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Description" lang="en" content="open source html and css template">
 <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="slidy.css">
+
 </head>
 <body>
 <div id="menu">
@@ -50,10 +50,10 @@
 <div class="pageitem">
 <div id="slider">
 <figure>
-<img id="borderimg" src="images/flower.jpg" alt>
-<img id="borderimg" src="images/forest.jpg" alt>
-<img id="borderimg" src="images/leaf.jpg" alt>
-<img id="borderimg" src="images/swamp.jpg" alt>
+<image id = "borderimg" src="{{url_for('static', filename='images/flower.jpg')}}">
+<image id = "borderimg" src="{{url_for('static', filename='images/forest.jpg')}}">
+<image id = "borderimg" src="{{url_for('static', filename='images/leaf.jpg')}}">
+<image id = "borderimg" src="{{url_for('static', filename='images/swamp.jpg')}}">
 
 </figure>
 </div>
@@ -68,7 +68,7 @@ flex-wrap: wrap;">
 		flex-direction: column;
 		flex-basis: 100%;
 		flex: 1; align-items: center;">
-			<img src="/images/me2.jpg" id="borderimg" class="sectionImgBox" >
+			<image id = "borderimg" src="{{url_for('static', filename='images/me.png')}}" class="sectionImgBox" >
 		</div>
 
 		<div class="sectionTextBox " style="display: flex;
@@ -179,7 +179,7 @@ flex-wrap: wrap;">
 	flex-direction: column;
 	flex-basis: 100%;
 	flex: 1; align-items: center;">
-		<img src="/images/bugy1.png" class="sectionImgBox" style="border-radius:10px; width: 60%" >
+		<image src="{{url_for('static', filename='images/bugy1.png')}}" class="sectionImgBox" style="border-radius:10px; width: 60%" >
 	</div>
 
 	<div class = "sectionImgBox " 
@@ -187,7 +187,7 @@ flex-wrap: wrap;">
 	flex-direction: column;
 	flex-basis: 100%;
 	flex: 1; align-items: center;">
-		<img src="/images/bugy.png" class="sectionImgBox" style="border-radius:10px; width: 60%" >
+		<image src="{{url_for('static', filename='images/bugy.png')}}" class="sectionImgBox" style="border-radius:10px; width: 60%" >
 	</div>
 
 </div>
